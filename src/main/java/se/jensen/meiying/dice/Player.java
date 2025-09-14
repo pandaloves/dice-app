@@ -22,9 +22,17 @@ public class Player {
         this.scores = new ArrayList<>();
     }
 
-    public String getFullname() { return firstname + " " + lastname; }
-    public int getTotalScore() { return totalScore; }
-    public List<Integer> getScores() { return scores; }
+    public String getFullname() {
+        return firstname + " " + lastname;
+    }
+
+    public int getTotalScore() {
+        return totalScore;
+    }
+
+    public List<Integer> getScores() {
+        return scores;
+    }
 
     public void addToScore(int score) {
         this.totalScore += score;
@@ -32,8 +40,13 @@ public class Player {
         this.scores.add(score);
     }
 
-    public int getRollsLeft() { return rollsLeft; }
-    public boolean isComputer() { return isComputer; }
+    public int getRollsLeft() {
+        return rollsLeft;
+    }
+
+    public boolean isComputer() {
+        return isComputer;
+    }
 
     public void resetPlayer() {
         this.totalScore = 0;
