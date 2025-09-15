@@ -50,7 +50,7 @@ public class GameController {
 
         response.put("roll", rollResult);
         response.put("currentPlayer", currentGame.getCurrentPlayer().getFullname());
-        response.put("currentPlayerIndex", currentGame.getCurrentPlayerIndex()); // <-- Add this
+        response.put("currentPlayerIndex", currentGame.getCurrentPlayerIndex());
         response.put("rollsLeft", currentGame.getCurrentPlayer().getRollsLeft());
         response.put("totalScore", currentGame.getCurrentPlayer().getTotalScore());
         response.put("gameState", currentGame.getGameState());
@@ -79,7 +79,7 @@ public class GameController {
         response.put("gameStatus", currentGame.getGameState().equals("playing") ? "playing"
                 : currentGame.getGameState().equals("end") ? "finished" : "setup");
         response.put("currentPlayer", currentGame.getCurrentPlayer().getFullname());
-        response.put("currentPlayerIndex", currentGame.getCurrentPlayerIndex()); // <-- Add this
+        response.put("currentPlayerIndex", currentGame.getCurrentPlayerIndex());
         response.put("players", getPlayersInfo());
 
         if ("end".equals(currentGame.getGameState())) {

@@ -23,7 +23,7 @@ public class Game {
     private void setPlayers(String player1First, String player1Last, String player2First, String player2Last, String gameMode) {
         if ("human vs computer".equalsIgnoreCase(gameMode)) {
             players.add(new Player(player1First, player1Last, "player", false));
-            players.add(new Player("Computer", "", "computer", true)); // isComputer: true
+            players.add(new Player("Computer", "", "computer", true));
         } else if ("human vs human".equalsIgnoreCase(gameMode)) {
             players.add(new Player(player1First, player1Last, "player", false));
             players.add(new Player(player2First, player2Last, "player", false));
