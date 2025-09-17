@@ -29,7 +29,7 @@ public class GameController {
         Map<String, Object> response = new HashMap<>();
         response.put("message", "Game started");
         response.put("currentPlayer", currentGame.getCurrentPlayer().getFullname());
-        response.put("currentPlayerIndex", currentGame.getCurrentPlayerIndex()); // <-- Add this
+        response.put("currentPlayerIndex", currentGame.getCurrentPlayerIndex());
         response.put("players", getPlayersInfo());
         response.put("gameState", currentGame.getGameState());
         response.put("gameStatus", currentGame.getGameState().equals("playing") ? "playing"
